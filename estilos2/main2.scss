@@ -1,0 +1,110 @@
+@import "./partials/variables";
+
+// header
+
+.header__lista:hover{
+      border-bottom: 0.5px solid white;
+
+}
+
+// seccion carrusel
+
+.carrusel{
+    margin-top: -270px;
+}
+
+// seccion bienvenidos 
+.intro{
+    background-color: $color_negro;
+    padding-top: ($padding)-65;
+    color: $color_blanco;
+    padding-bottom: $padding/2;
+
+
+    &__titulo{
+    text-align: left;
+    margin-bottom: ($margin/2)-20;
+    margin-left: ($margin/2)-30;
+    color: $color_blanco;
+    font-family: $title_font;
+    }
+
+    &__parrafo{
+    text-align: left;
+    color: $color_blanco;
+    }
+}
+
+
+// presentacion quienes somos
+
+.presentacion{
+    text-align: center;
+    margin-top: $margin/2;
+    
+    &__qs{
+        margin-top: ($margin/2)-10;
+        margin-bottom: ($margin)-20;
+    }
+}
+
+// seccion servicios
+
+.servicios{
+    margin-top: $margin/2;
+    margin-bottom: $margin;
+    
+    &__titulo{
+        font-family: $title_font;
+    }
+    &__parrafo{
+        margin-bottom: ($margin/2)-20;
+        color: $color_negro;
+    }
+    &__catering{
+        margin-left: ($margin)+20;
+        margin-top: ($margin)-200;
+        font-family: $title_font;
+    }
+    &__parrafcate{
+        margin-left: ($margin)+20;
+        color: $color_parrafos;
+    }
+    &__ambien{
+        margin-left: ($margin)+20;
+        margin-top: ($margin)-180;
+       font-family: $title_font;
+    }
+    &__parrafambient{
+        margin-left: ($margin)+20;
+        color: $color_parrafos;
+    }
+    
+}
+
+// video
+
+.video{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px ;
+}
+
+// footer
+
+.footer{
+    background-color: $color_negro;
+    padding-top: ($padding.2);
+    
+        &__dire{
+            color: $color_parrafos;
+            margin-bottom: $margin/2;
+        }
+        &__consulta{
+            color: $color_parrafos;
+        }
+        &__h3{
+            margin-bottom: ($margin/2)-20;
+            font-weight: 400;
+        }
+}
