@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portofino eventos, contacto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salon de eventos en Temperley, Zona Sur. Contactanos para mas informacion! Deja tu mensaje y te responderemos en breve.">
+    <meta name="keywords" content="salon de eventos, contacto, numero telefonico, whatsapp, redes sociales, email.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/main.scss">
+</head>
+<body>
+    <header class="header">
+ 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img class="img-fluid" class="header__img" src="../imagenes/logo4.png" alt="logo" height="140px" width="140px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active aling-items-left header__lista" aria-current="page" href="../html/index.html">Home</a>
+                  <a class="nav-link header__lista" href="../html/servicios.html">Servicios</a>
+                  <a class="nav-link header__lista" href="../html/galeria.html">Galeria</a>
+                  <a class="nav-link header__lista" href="../html/contacto.html">Contacto</a>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+     </header>
+
+     <form action="#" metdod="GET" enctype="multipart/form-data">
+
+        <main class="mainContacto">
+        
+                <fieldset> 
+                   
+                   <legend>Ingresa tus datos</legend>
+           
+                   <div>
+           
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="nombre" name="Nombre">
+           
+                   </div>
+                   <br>
+                   <div>
+                        <label for="Apellido">Apellido</label>
+                         <input type="text" id="apellido" name="apellido">
+                    </div>
+        
+                   <br>
+        
+                   <div>
+                        <label for="Email">E-mail</label>
+                        <input type="email" id="email" name="email"     placeholder="Correo electrónico">
+                    </div>
+        
+                    <br>
+                   <div>
+                     <div>
+                        <label for="Comentarios" >Comentarios</label>
+                        </div>
+                        <textarea name="comments" id="100" cols="33" rows="10" ></textarea>
+           
+                   </div>
+                   <br>
+           
+               </fieldset>
+        
+            
+            <label> 
+                Selecciona el tipo de consulta
+            </label> 
+        
+            <select name="consultas" id="consultas">
+        
+            <option value="Salon"> Salón </option>
+            <option value="servicios"> Servicios </option>
+        
+            <option value="catering"> Catering </option>
+            
+                </select>
+            <br><br>
+                <fieldset>
+        
+                    <label class="consulta"> Aceptar terminos </label>
+                    <input type="checkbox" name="terminos" id="terminos">
+                    
+                
+                </fieldset>
+        
+            <fieldset>
+            
+            <input type="submit" value="Enviar consulta">
+            <input type="reset" value="Limpiar consulta">
+            
+            </fieldset>
+</body>
+</html>
