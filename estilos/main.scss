@@ -286,8 +286,13 @@ h1{
     grid-column-start: span 2;
 }
 
+.galeria__item:nth-child(5){
+    grid-row-start: span 2;
+}
 
-
+.galeria__item:nth-child(11){
+    grid-column-start: span 2;
+}
 
 
 
