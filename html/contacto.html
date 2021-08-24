@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <title>Portofino eventos, contacto</title>
     <meta charset="UTF-8">
@@ -27,10 +27,11 @@
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active aling-items-left header__lista" aria-current="page" href="../html/index.html">Home</a>
+                  <a class="nav-link header__lista" aria-current="page" href="../html/index.html">Home</a>
                   <a class="nav-link header__lista" href="../html/servicios.html">Servicios</a>
                   <a class="nav-link header__lista" href="../html/galeria.html">Galeria</a>
-                  <a class="nav-link header__lista" href="../html/contacto.html">Contacto</a>
+                  <a class="nav-link header__lista" href="../html/testimonios.html">Testimonios</a>
+                  <a class="nav-link active header__lista" href="../html/contacto.html">Contacto</a>
                   
                 </div>
               </div>
@@ -39,72 +40,100 @@
           
      </header>
 
-     <form action="#" metdod="GET" enctype="multipart/form-data">
+<h1 class="solicite">Solicite una entrevista</h1>
 
-        <main class="mainContacto">
+     <div class="row justify-content-evenly 
+     entrevista">
+      <div class="col-4">
+        <div class="nombre">
+          <input type="text" id="nombre" name="nombre"  placeholder="Nombre y Apellido" size="30">
+        </div>
+
+        <div class="telefono">
+          <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono" size="30">
+        </div>
+
+        <div class="invitados">
+           <select class="form-select" aria-label="Default select example">
+          ||<option selected>Cantidad de invitados</option>
+          ||<option value="1">60-80</option>
+          ||<option value="2">80-100</option>
+          ||<option value="3">100-150</option>
+          ||<option value="4">150-180</option>
+          </select>
+      </div>
+
+      </div>
+
+      <div class="col-4">
         
-                <fieldset> 
-                   
-                   <legend>Ingresa tus datos</legend>
-           
-                   <div>
-           
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" id="nombre" name="Nombre">
-           
-                   </div>
-                   <br>
-                   <div>
-                        <label for="Apellido">Apellido</label>
-                         <input type="text" id="apellido" name="apellido">
-                    </div>
-        
-                   <br>
-        
-                   <div>
-                        <label for="Email">E-mail</label>
-                        <input type="email" id="email" name="email"     placeholder="Correo electrónico">
-                    </div>
-        
-                    <br>
-                   <div>
-                     <div>
-                        <label for="Comentarios" >Comentarios</label>
-                        </div>
-                        <textarea name="comments" id="100" cols="33" rows="10" ></textarea>
-           
-                   </div>
-                   <br>
-           
-               </fieldset>
-        
-            
-            <label> 
-                Selecciona el tipo de consulta
-            </label> 
-        
-            <select name="consultas" id="consultas">
-        
-            <option value="Salon"> Salón </option>
-            <option value="servicios"> Servicios </option>
-        
-            <option value="catering"> Catering </option>
-            
-                </select>
-            <br><br>
-                <fieldset>
-        
-                    <label class="consulta"> Aceptar terminos </label>
-                    <input type="checkbox" name="terminos" id="terminos">
-                    
-                
-                </fieldset>
-        
-            <fieldset>
-            
-            <input type="submit" value="Enviar consulta">
-            <input type="reset" value="Limpiar consulta">
-            
-            </fieldset>
+        <div class="mail">
+          
+          <input type="email" id="email" name="email"     placeholder="Correo electrónico" size="30">
+      </div>
+
+      <div class="evento">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Tipo de evento</option>
+          <option value="1">Fiesta de 15 o 16 años</option>
+          <option value="2">Boda</option>
+          <option value="3">Corporativo</option>
+          <option value="4">Bautismo</option>
+          <option value="5">Otro</option>
+        </select>
+      </div>
+
+      <div>
+    <input type="date" id="start" name="trip-start"
+       value="2021-01-01"
+       min="2018-01-01" max="2018-12-31">
+      </div>
+      <button class="boton">Enviar</button>
+      </div>
+    </div>
+
+      <div>
+
+        <img src="../imagenes/salon5.jpg" alt="#" class="fotoContacto">
+
+      </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6554.612091845348!2d-58.38381900000001!3d-34.77307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b9ddfa49da75216!2sPortofino%20Eventos!5e0!3m2!1ses!2sar!4v1629778877612!5m2!1ses!2sar" width="1350" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+      <!-- seccion footer -->
+  <footer class="text-center footer-style">
+    <div class="container footer">
+        <div class="row">
+            <div class="col-md-4 footer-col footer__dire" >
+                <h3 class="footer__h3">Dirección</h3>
+                <p>
+                    Buenos Aires - Argentina <br />
+                    Av. Eva Peron 1017
+                    Tel: 11 3026-1723
+                  </p>
+              </div>
+          <div class="col-md-4 footer-col">
+              
+              <ul class="list-inline">
+                  <li>
+                      <i class="bi bi-facebook"></i><a  target="_blank" href="https://www.facebook.com/portofinoeventos2017"></a>
+                  </li>
+                  <li>
+                      <i class="bi bi-instagram"></i><a  target="_blank" href="https://www.instagram.com/portofinoeventos/?hl=es" ></a>
+                  </li>
+                  
+                  
+              </ul>
+          </div>
+          <div class="col-md-4 footer-col footer__consulta">
+              <h3>Consulte para su presupuesto</h3>
+              <p>¡Te ofrecemos todo lo que necesitas para tu fiesta!</p><form action="../html/contacto.html">
+                <input type="submit" value="Solicitar entrevista" />
+        </form> 
+          </div>
+      </div>
+  </div>
+</footer>
 </body>
 </html>
