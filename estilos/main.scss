@@ -237,7 +237,6 @@ a.button {
       background-color: darken(white, 5%);
       color: black ;
       border: 1px solid #F8B1F8 ;
-      
       transition: .2s ease;
     }
   }
@@ -294,30 +293,31 @@ h1{
     grid-column-start: span 2;
 }
 
+.galeria__img:hover{
+      transition: .5s ease;
+      -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+// testimonios
 
 
-// div.galeria {
-//     border: 1px solid #ccc;
-//     }
-//     div.galeria:hover {
-//     border: 1px solid #777;
-//     }
-//     div.galeria img {
-//     width: 100%;
-//     height: auto;
-//     }
-//     div.desc {
-//     padding: 15px;
-//     text-align: center;
-//     }
-//     * {
-//     box-sizing: border-box;
-//     }
-//     .responsive {
-//     padding: 0 6px;
-//     float: left;
-//     width: 24.99999%;
-//     }
+
+
+// .martina{
+//     margin-top: 100px;
+//     letter-spacing: 0.1rem;
+// }
+
+// .fotoMartina{
+//     height: 400px;
+//     width: 600px;
+// }
+
+// .parrafoMartina{
+//     letter-spacing: 0.1rem;
+//     line-height: 1.5rem;
+//     font-size: 16px;
+// }
     
 
 // media quire
