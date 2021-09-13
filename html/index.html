@@ -21,9 +21,9 @@
 <body>
     <header class="header">
  
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-lg">
             <div class="container">
-              <a class="navbar-brand" href="#"><img class="img-fluid" class="header__img" src="../imagenes/logo4.png" alt="logo" height="140px" width="140px"></a>
+              <a class="navbar-brand" href="./index.html"><img class="img-fluid" class="header__img" src="../imagenes/logo4.png" alt="logo" height="140px" width="140px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -50,11 +50,15 @@
 
 <main>
  
-  <div class="portofinoEventos">
-<h1 class="portofino">Portofino Eventos</h1>
-<p class="portofinoParrafo">La eleccion ideal</p>
-<a href="./galeria.html" class="botonGaleria">Ver Galeria</a>
-</div>
+  <!-- IMAGEN PRINCIPAL -->
+
+  <div class="portofinoContenedor">
+    <img src="../imagenes/eventos3.jpg" class="img-fluid" alt="..." width="100%">
+    <div class="portofino1"><h1>Portofino Eventos</h1></div>
+    <div class="portofino2">La elección ideal </div>
+  </div>
+  
+ 
 
   <!-- seccion bienvenidos -->
 <section>
@@ -68,42 +72,84 @@
 <section>
   <div class="container presentacion">
     <div class="row presentacion__qs">
-
+      
       <div class="col-sm">
-         <h2 data-aos="fade-down"
-         data-aos-easing="linear"
-         data-aos-duration="1500"> ¿Quienes Somos?</h2>
-          <img src="../imagenes/quienessomos.png" class="img-fluid" height="100px" width="100px" alt="#" >
-          <p data-aos="fade-up">Portofino eventos es una empresa lider en el mercado, contamos con mas de 8 años de experiencia realizando eventos de todo tipo.</p>
-       </div>
-
-      <div class="col-sm">
-           <h2 data-aos="fade-down"
-           data-aos-easing="linear"
-           data-aos-duration="1500">¿Como trabajamos?</h2>
-           <img src="../imagenes/comotrabajamos.png" class="img-fluid" height="100px" width="100px" alt="#">
-           <p data-aos="fade-up">En Portofino eventos nos encargamos de que pases tu noche tal como la soñaste, estamos atentos a cada detalle para que la fiesta sea perfecta. Te vamos acompañar y asesorar en el proceso para que no te preocupes mas que en disfrutar!</p>
+        <h2 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="titulos"> ¿Quienes Somos?</h2>
+        <img src="../imagenes/quienessomos.png" class="img-fluid" height="100px" width="100px" alt="#" >
+        <p data-aos="fade-up">Portofino eventos es una empresa lider en el mercado, contamos con mas de 10 años de experiencia realizando eventos de todo tipo.</p>
       </div>
-
+      
       <div class="col-sm">
-           <h2 data-aos="fade-down"
-           data-aos-easing="linear"
-           data-aos-duration="1500">¿Por que elegirnos?</h2>
-            <img src="../imagenes/porquelegirnos.png" class="img-fluid" height="100px" width="100px"  alt="#">
-            <p data-aos="fade-up">A lo largo de los años nos hemos ganado la confianza de nuestros clientes basandonos en las necesidades de cada uno, nos acomplamos a tus deseos y sueños.</p>
+        <h2 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"  class="titulos">¿Cómo trabajamos?</h2>
+        <img src="../imagenes/comotrabajamos.png" class="img-fluid" height="100px" width="100px" alt="#">
+        <p data-aos="fade-up">En Portofino eventos nos encargamos de que pases tu noche tal como la soñaste, estamos atentos a cada detalle para que la fiesta sea perfecta. Te vamos acompañar y asesorar en el proceso para que no te preocupes mas que en disfrutar!</p>
       </div>
-
+      
+      <div class="col-sm">
+        <h2 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="titulos">¿Por que elegirnos?</h2>
+        <img src="../imagenes/porquelegirnos.png" class="img-fluid" height="100px" width="100px"  alt="#">
+        <p data-aos="fade-up">A lo largo de los años nos hemos ganado la confianza de nuestros clientes basandonos en las necesidades de cada uno, nos acomplamos a tus deseos y sueños.</p>
+      </div>
+      
     </div>
+  </div>
+</section>
+
+<!-- SECCION EVENTO PLANIFICACION -->
+<section class="conteinerPlanificacion"> 
+  
+  <div>
+    <h2 class="h2planificacion">El resultado del evento depende de la planificación.</h2>
+    <p class="textoPlanificacion">En Portofino eventos sabemos que el dia del evento sera uno de los mas importantes de tu vida, por eso nos encargamos de que todo salga perfecto, trabajamos con responsabilidad y profesionalismo, nos adaptaremos a tus necesidades y deseos para que tu noche sea la soñada. </p>
+
+    <a href="./contacto.html" class="botonPresupuesto">Solicitar presupuesto</a>
+  </div>
+  
+  <div class="fotoBoda">
+    <img src="../imagenes/boda.jpg" alt="fotoboda" >
+  </div>
+  
+</section>
+
+<div>
+  <h2 class="h2personal">¡Conoce al personal encargado de tu fiesta!
+    
+  </h2>
+</div>
+
+<section class="personalConteiner">
+
+  
+  <div class="circulo">
+    <img src="../imagenes/claudia.jpg" alt="" class="foto">
+    <h3 class="h3personal">Claudia Barani</h3>
+    <h5 class="h5personal">Gerente general</h5>
+  </div>
+  
+  <div class="circulo">
+    <img src="../imagenes/adriana.jpg" alt="" class="foto">
+    <h3 class="h3personal">Adriana Perez</h3>
+    <h5 class="h5personal">Titular de la firma</h5>
+  </div>
+  
+  <div class="circulo">
+    <img src="../imagenes/rocio.jpg" alt="" class="foto">
+    <h3 class="h3personal">Rocio Gonzalez</h3>
+    <h5 class="h5personal rocio">Organizadora de eventos</h5>
   </div>
 </section>
 
 
 <!-- video home -->
-<section>
-    <video src="../video-salon.mp4" class="video" autoplay loop muted controls></video>
+ <section>
+  <video src="../video-salon.mp4" class="video" autoplay loop muted controls></video>
 </section>
-
-
 
 </main>
 
@@ -112,30 +158,26 @@
   <div class="container footer">
       <div class="row">
           <div class="col-md-4 footer-col footer__dire" >
-              <h3 class="footer__h3">Dirección</h3>
+              <h3 class="footer__h3">Contacto</h3>
               <p>
                   Buenos Aires - Argentina <br />
-                  Av. Eva Peron 1017
+                  Av. Eva Perón 1017
                   Tel: 11 3026-1723
+                  adriana_krause@hotmail.com
               </p>
           </div>
           <div class="col-md-4 footer-col">
               
               <ul class="list-inline">
-                  <li>
-                    <i class="bi bi-facebook"></i><a  target="_blank" href="https://www.facebook.com/portofinoeventos2017"></a>
-                  </li>
-                  <li>
-                    <i class="bi bi-instagram"></i><a  target="_blank" href="https://www.instagram.com/portofinoeventos/?hl=es" ></a>
-                  </li>
                  
-                 
+                
+
               </ul>
           </div>
           <div class="col-md-4 footer-col footer__consulta">
               <h3>Consulte para su presupuesto</h3>
               <p>¡Te ofrecemos todo lo que necesitas para tu fiesta!</p><form action="../html/contacto.html">
-                <input type="submit" value="Solicitar entrevista" />
+                <input type="submit" value="Solicitar entrevista" class="botonSolicitar"/>
         </form>
           </div>
       </div>

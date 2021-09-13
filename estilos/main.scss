@@ -2,32 +2,46 @@
 
 // header
 
+.header{
+    background-color: black;
+}
+
 .header__lista:hover{
-      border-bottom: 0.5px solid white;
+      border-bottom: 0.5px solid black;
 
 }
 
 // seccion foto intro
 
-.portofinoEventos{
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url(../imagenes/eventos3.jpg);
+.portofinoContenedor{
     position: relative;
-    background-size: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-
-    margin-top: -20px;
+    width: 100%;
+    height: 100%;
 }
 
-.portofino{
-    position: relative;
+.portofino1 h1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
     color: white;
-    text-align: center;
-    padding-top: 200px;
-    padding-right: 380px;
-    font-size: 100px;
-    word-spacing: 20px;
+    text-align: left;
+    font-size: 500% !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.portofino2{
+    position: absolute;
+    top: 63%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    font-size: 250%;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+}
+
 
 .portofinoParrafo{
     color: white;
@@ -37,7 +51,7 @@
     padding-right: 670px;
     padding-top: -10px;
     padding-bottom: 30px;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
 }
 
 .botonGaleria{
@@ -52,11 +66,10 @@
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 2px;
-    background-color: #e68387;
+    background-color: transparent;
     background-repeat: no-repeat;
     border-radius: 30px;
     text-decoration: none;
-
 }
 
 .botonGaleria:hover{
@@ -66,11 +79,10 @@
     transition: .2s ease;
 }
 
-  
-
 // seccion bienvenidos 
+
 .intro{
-    background-color: $color_negro;
+    background-color: black;
     padding-top: ($padding)-65;
     color: $color_blanco;
     padding-bottom: $padding/2;
@@ -92,6 +104,7 @@
 }
 
 
+
 // presentacion quienes somos
 
 .presentacion{
@@ -104,11 +117,121 @@
     }
 }
 
+.titulos{
+    font-family:  $title_font;
+}
+
+.conteinerPlanificacion{
+    display: flex;
+    flex-direction: row;
+    background-image: url(../imagenes/color1.png);
+}
+
+.h2planificacion{
+    color: #343434;
+    font-weight: 500;
+    font-variant-ligatures: common-ligatures;
+    margin-top: 200px;
+    padding: 0px 50px 0px 80px;
+    font-family:  $title_font ;
+}
+
+.textoPlanificacion{
+    color: #343434;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 50px 0px 80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.botonPresupuesto{
+    color: white;
+    margin-left: 80px;
+    padding: 15px 50px;
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    background-color: #C19686;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.botonPresupuesto:hover{
+    background-color: darken(white, 5%);
+    color: black ;
+    border: 1px solid #C19686 ;
+    transition: .2s ease;
+}
+
 // seccion servicios
 
+.containerIconos{
+    background-color: #f9f2ae;
+   padding-bottom: 80px;
+}
+
+.servicios1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   margin-bottom: 25px;
+   margin-left: 70px;
+}
+
+.servicios2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   margin-bottom: 25px;
+    margin-left: 70px;
+}
+
+.servicios3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 70px;
+}
+
+.serviciosIncluidos{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-family:  $title_font;
+    padding-top: 40px;
+}
+
+
+.bi{
+    height: 100px;
+    width: 100px;
+    size: 100px;
+    font-size: 40px;
+    padding-top: 500px;
+    margin-left: 50px;
+    
+}
+
+.iconSilla{
+    height: 65px;
+    margin-left: 50px;
+}
+
+.h5wifi{
+    margin-left: 50px;
+}
+
+.h5metros{
+    margin-left: 40px;
+}
+
 .servicios{
+    padding: 10px 10px 10px 100px;
     margin-top: $margin/2;
     margin-bottom: $margin;
+  
+   
     
     &__titulo{
         font-family: $title_font;
@@ -139,11 +262,88 @@
     
 }
 
+.foto-servicio{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.fotoServicio{
+    width: 100%;
+    height: 500px;
+    margin-top: 0px
+}
+
+// seccion personal salon
+
+.personalConteiner{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 180px;
+
+ }
+
+.circulo{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100px;
+    margin-bottom: 180px;
+    margin-top: -50px;
+    
+}
+
+.circulo > .foto{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.8;
+	-khtml-opacity: 0.5;
+}
+
+.foto:hover{
+
+    filter:alpha(opacity=100);  
+	-moz-opacity: 1.0;  
+	opacity: 1.0;
+	-khtml-opacity: 1.0; 
+}
+
+.h2personal{
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family:  $title_font;
+}
+
+.h3personal{
+    font-family: "open sans" ;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family:  $title_font;
+}
+
+.h5personal{
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.rocio{
+    margin-left: 20px;
+}
+
+
 // video
 
 .video{
     height: 100%;
     width: 100%;
+    margin-top: 3px;
 }
 
 // footer
@@ -175,6 +375,10 @@ a.button {
 
 // seccion contacto
 
+.footer-contacto{
+    margin-top: -100px;
+}
+
 .solicite{
     font-weight: 500;
     padding-bottom: 20px;
@@ -182,7 +386,7 @@ a.button {
     text-align: left;
     font-size: 40px;
     color: #4B4A4A;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:  $title_font;
     margin-top: 40px;
     margin-left: 150px;
 }
@@ -190,6 +394,9 @@ a.button {
 .entrevista{
     border-width: 1px;
     border-color: rgba(0,0,0,0.12);
+    display: flex !important;
+    flex-direction: row !important;
+
 }
 
 .nombre{
@@ -222,16 +429,16 @@ a.button {
     border-radius: 1px;
     height: 45px;
     border-color: white;
-    padding: 0;
-    margin-right: 110px;
-    margin-top: 40px;
+    padding: 0px;
+    margin-left: -350px;
+    margin-top: 80px;
     margin-bottom: 5px;
     width: 30%;
     background-color: #F8B1F8 ;
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:  $title_font;
     transition: .2s ease;
-    float: right;
+    float: center;
     
     &:hover {
       background-color: darken(white, 5%);
@@ -241,10 +448,37 @@ a.button {
     }
   }
 
+.botonSolicitar{
+    display: inline-block;
+    border-radius: 1px;
+    height: 45px;
+    border-color: white;
+    padding: 0;
+    width: 50%;
+    background-color: #F8B1F8 ;
+    color: black;
+    font-family:  $title_font;
+    transition: .2s ease;
+
+    &:hover{
+        background-color: darken(white, 5%);
+        color: black ;
+        border: 1px solid #F8B1F8 ;
+        transition: .2s ease;
+    }
+}
+
 .fotoContacto{
     width: 100%;
     height: 500px;
     margin-top: 40px;
+}
+
+.footer-contacto:hover{
+    background-color: darken(white, 5%);
+    color: black ;
+    border: 1px solid #F8B1F8 ;
+    transition: .2s ease;
 }
 
 // galeria
@@ -259,18 +493,40 @@ h1{
     font-weight: 300;
 }
 
+.galeria{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.8;
+	-khtml-opacity: 0.5;
+}
+
 .galeria-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: 150px;
     padding: 20px;
-    grid-gap: 5px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    grid-gap: 8px;
+}
+
+.galeria__img:hover{
+    filter:alpha(opacity=50);  
+	-moz-opacity: 0.5;  
+	opacity: 0.8;
+	-khtml-opacity: 0.5; 
 }
 
 .galeria__img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter:alpha(opacity=100);
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+	-khtml-opacity: 1.0;
 }
 
 .galeria__item:nth-child(6){
@@ -293,92 +549,314 @@ h1{
     grid-column-start: span 2;
 }
 
-.galeria__img:hover{
-      transition: .5s ease;
-      -webkit-transform:scale(1.1);transform:scale(1.1);
-}
+
+
 
 // testimonios
 
+.fotoFacebook{
+    transition: transform .3s;
+}
+.fotoFacebook:hover{
+    transform: scale(1.5);
+}
+
+.fotoFacebook{
+    transition: transform .3s;
+}
+
+.fotoFacebook{
+    transition: transform .3s;
+}
+
+.h1testimonios{
+    margin-top: 50px;
+    padding: 15px 0px 15px 0px;
+    border-style: solid;
+   
+}
 
 
-
-// .martina{
-//     margin-top: 100px;
-//     letter-spacing: 0.1rem;
-// }
-
-// .fotoMartina{
-//     height: 400px;
-//     width: 600px;
-// }
-
-// .parrafoMartina{
-//     letter-spacing: 0.1rem;
-//     line-height: 1.5rem;
-//     font-size: 16px;
-// }
+.btn{
+    margin-top: 70px;
+    margin-left: 600px;
     
+}
+.botonTestimonios{
+    position: relative;
+    color: white;
+    padding: 11px 45px;;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    background-color: #FFB6C1;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.botonTestimonios:hover{
+    background-color: transparent;
+    color: black ;
+    border: 1px solid wheat ;
+    transition: .2s ease;
+}
+
+.parte1{
+    display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+
+// iphone
+
+.iphoneconteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFB6C1;
+}
+
+.iphone{
+    margin-left: 100px;
+    margin-bottom: 100px;
+
+}
+
+.h3redes{
+    margin:  0px 0px 350px 40px;
+    font-size: 32px;
+    font-family:  $title_font;
+    color: black;
+}
+
+.btninsta{
+    margin-top: -550px;
+    margin-left: 250px;
+    
+}
+
+.btnface{
+    margin-top: -550px;
+    margin-left: 80px;
+}
+
 
 // media quire
 
-// @media (max-width: 1199px) {
-//     .u-section-1 .u-sheet-1 {
-//       min-height: 660px;
-//     }
-  
-//     .u-section-1 .u-text-2 {
-//       margin-right: 459px;
-//     }
-//   }
-  
-//   @media (max-width: 991px) {
-//     .u-section-1 .u-sheet-1 {
-//       min-height: 506px;
-//     }
-  
-//     .u-section-1 .u-text-2 {
-//       margin-right: 239px;
-//     }
-//   }
-  
-//   @media (max-width: 767px) {
-//     .u-section-1 .u-sheet-1 {
-//       min-height: 380px;
-//     }
-  
-//     .u-section-1 .u-text-2 {
-//       margin-right: 59px;
-//     }
-//   }
-  
-//   @media (max-width: 575px) {
-//     .u-section-1 .u-sheet-1 {
-//       min-height: 239px;
-//     }
-  
-//     .u-section-1 .u-text-1 {
-//       font-size: 3.75rem;
-//     }
-  
-//     .u-section-1 .u-text-2 {
-//       margin-right: 0;
-//     }
-// }
+@media only screen and (max-width: 320px){
 
-// @media only screen and (max-width: 700px) {
-//     .responsive {
-//     width: 49.99999%;
-//     margin: 6px 0;
-//     }
-//     }
-//     @media only screen and (max-width: 500px) {
-//     .responsive {
-//     width: 100%;
-//     }
-//     }
-//     .clearfix:after {
-//     content: "";
-//     display: table;
-//     clear: both;
-//     }
+    .portofino1{ //HOME
+       font-size: 5px !important;
+       margin-left: -10px !important;
+    }
+    .portofino2{
+        font-size: 10px !important;
+        margin-top: 20px !important;
+        margin-left: 0px !important;
+    }
+    .conteinerPlanificacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .fotoBoda{
+        display: none;
+    }
+    .botonPresupuesto{
+       padding-left: 20px;
+       padding-right: 20px;
+       margin-top: 40px;
+    }
+    .personalConteiner{
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+    .servicios1{ //SERVICIOS
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios2{
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios3{
+        display: flex;
+        flex-direction: column;
+    }
+    .foto-servicios{
+        height: 100px;
+        width: 200px;
+    }
+    .servicios__titulo{
+        font-size: 45px;
+        margin-left: -70px;
+    }
+    .servicios__parrafo{
+      margin-left: -70px;
+      margin-bottom: 50px;
+    }
+    .servicios__catering{
+        margin-left: -60px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .servicios__parrafcate{
+        margin-left: -60px;
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: none;
+    }
+    .foto-servicios{
+        display: none;
+    }
+    .servicios__ambien{
+        margin-left: -60px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .servicios__parrafambient{
+        margin-left: -60px;
+    }
+    .parte1{ //TESTIMONIOS
+        display: flex !important;
+        flex-direction: column;
+    }
+    .pic1{
+        margin-left: -60px;
+    }
+    .botonTestimonios{
+        margin-left: -230px;
+        margin-bottom: 100px;
+    }
+    .h3redes{
+        font-size: 25px;
+        padding-right: 150px;
+    }
+    .iphone{
+        display: none;
+    }
+}
+    .solicite{ //CONTACTO
+        margin-left: 40px;
+    }
+    
+    .invitados{
+        margin-bottom: 30px;
+    }
+    .boton{
+        margin-right: -110px;
+        width: 100%;
+    }
+    .footer-contacto{
+        margin-top: -200px;
+    }
+
+
+@media only screen and (max-width: 768px){
+    .portofino1{ //HOME
+        font-size: 11px;
+    }
+    .portofino2{
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+    .fotoBoda{
+        width: 20px;
+        display: none;
+    }
+    .conteinerPlanificacion{
+        padding-bottom: 200px;
+    }
+    .botonSolicitar{
+        width: 80%;
+    }
+    .parte1{ //TESTIMONIOS
+        display: grid;
+        grid-template-columns: repeat(2, 1rem);
+        margin-left: 50px;
+    }
+    // #face1{
+    //     margin-left: -400px;
+    // }
+    // #face2{
+    //     margin-left: -337px;
+    // }
+   
+    .btn{
+        margin-left: 280px;
+    }
+    .iphone{
+        width: 900px;
+    }
+    .btninsta{
+        margin-top: -500px;
+        margin-left: 200px;
+    }
+    .h3redes{
+        margin-right: -200px;
+    }
+    .footer-contacto{
+        margin-top: -170px;
+    }
+    .solicite{ //SERVICIOS
+        margin-left: 85px;
+    }
+    .servicios__ambien{
+        margin-right: 300px;
+        margin-top: -50px;
+    }
+    .servicios__catering{
+        margin-top: -50px;
+    }
+    .img1{
+        margin-top: 20px;
+    }
+    .foto-servicio{
+        margin-right: 100px;
+    }
+}
+
+
+//GOOGLE MAPS 
+@media only screen and (max-width: 700px) { 
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+    }
+    @media only screen and (max-width: 500px) {
+    .responsive {
+    width: 100%;
+    }
+    }
+    .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:60%;
+        width:100%;
+        position:absolute;
+    }
